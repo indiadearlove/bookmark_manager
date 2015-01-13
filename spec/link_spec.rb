@@ -5,7 +5,6 @@ describe Link do
   context 'Demonstration of how datamapper works' do
 
     it 'should be created and then retrieved from the db' do
-      Link.destroy
       expect(Link.count).to eq(0)
       Link.create(title: 'Makers Academy',
         url: 'https://www.makersacademy.com/')
